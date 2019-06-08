@@ -20,7 +20,13 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var RecommendationLabel: UILabel!
     
  
-
+  
+    @IBOutlet weak var userInputTF: UITextField!
+    
+    @IBAction func Add(_ sender: Any) {
+        add()
+    }
+    
     @IBAction func Random(_ sender: Any) {
         random()
     }
@@ -64,7 +70,16 @@ class DetailViewController: UIViewController {
             
         
         RecommendationLabel.text = placesArr[number]
-        RecommendationImage.image = UIImage(named:placesArr[number])
+        RecommendationImage.image = UIImage(named:placesArr[number]) == nil ? UIImage(named:"noimage") : UIImage(named:placesArr[number])
+        
+    }
+    
+    func add(){
+        
+        let newPlace = userInputTF.text
+        placesArr.append(newPlace!)
+        userInputTF.resignFirstResponder()
+        userInputTF.text = ""
         
     }
     

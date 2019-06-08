@@ -114,21 +114,47 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bai-VJ-avo">
+                                <rect key="frame" x="72.5" y="593" width="171" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="AuD-Ns-1dO"/>
+                                    <constraint firstAttribute="width" constant="171" id="akO-lG-8dm"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fZA-fM-ndL">
+                                <rect key="frame" x="264" y="593" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="FgA-jk-HES"/>
+                                    <constraint firstAttribute="height" constant="30" id="Rzg-iu-O0g"/>
+                                </constraints>
+                                <state key="normal" title="Add"/>
+                                <connections>
+                                    <action selector="Add:" destination="zGz-IS-VU9" eventType="touchUpInside" id="sbD-6W-u4c"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="bai-VJ-avo" firstAttribute="leading" secondItem="7mM-jD-zc6" secondAttribute="leading" id="6X7-BK-Zal"/>
+                            <constraint firstItem="fZA-fM-ndL" firstAttribute="leading" secondItem="bai-VJ-avo" secondAttribute="trailing" constant="20.5" id="8Qv-kW-g0n"/>
                             <constraint firstItem="7mM-jD-zc6" firstAttribute="centerY" secondItem="u1a-Fn-lFm" secondAttribute="centerY" id="B5N-hs-4Km"/>
                             <constraint firstItem="7mM-jD-zc6" firstAttribute="top" secondItem="mKU-LB-fA1" secondAttribute="bottom" constant="20" id="HJl-Sn-ynN"/>
                             <constraint firstItem="7mM-jD-zc6" firstAttribute="centerX" secondItem="u1a-Fn-lFm" secondAttribute="centerX" id="Tl8-zI-RN1"/>
                             <constraint firstItem="mKU-LB-fA1" firstAttribute="centerX" secondItem="u1a-Fn-lFm" secondAttribute="centerX" id="UtC-uI-LJy"/>
+                            <constraint firstItem="fZA-fM-ndL" firstAttribute="top" secondItem="72P-2z-5bz" secondAttribute="bottom" constant="8" id="Zpx-fL-SBP"/>
                             <constraint firstItem="72P-2z-5bz" firstAttribute="top" secondItem="7mM-jD-zc6" secondAttribute="bottom" constant="17" id="gPR-rA-5fd"/>
                             <constraint firstItem="72P-2z-5bz" firstAttribute="centerX" secondItem="u1a-Fn-lFm" secondAttribute="centerX" id="lFW-s6-ePc"/>
+                            <constraint firstItem="bai-VJ-avo" firstAttribute="top" secondItem="72P-2z-5bz" secondAttribute="bottom" constant="8" id="z3x-D5-GwN"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="d71-Rq-j6f"/>
                     </view>
                     <connections>
                         <outlet property="RecommendationImage" destination="7mM-jD-zc6" id="vUl-Ma-A8U"/>
                         <outlet property="RecommendationLabel" destination="mKU-LB-fA1" id="QKE-UP-Wvi"/>
+                        <outlet property="userInputTF" destination="bai-VJ-avo" id="bI7-S4-qTN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RJD-N2-emK" userLabel="First Responder" sceneMemberID="firstResponder"/>
