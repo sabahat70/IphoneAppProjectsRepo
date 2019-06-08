@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Welcome Screen VC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" userLabel="Welcome Screen VC" customClass="ViewController" customModule="PlacesToVisit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Click on &quot;Continue&quot; to find  about interesting places you can visit." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3sP-lR-TdE">
+                                <rect key="frame" x="107" y="426" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="Cw8-do-vnd"/>
+                                    <constraint firstAttribute="width" constant="200" id="PJt-7r-c0l"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placestovisit" translatesAutoresizingMaskIntoConstraints="NO" id="7aR-pH-OxR">
+                                <rect key="frame" x="116.5" y="355.5" width="181" height="185"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="185" id="0Y8-2W-MkH"/>
+                                    <constraint firstAttribute="width" constant="181" id="x0G-MQ-r3U"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TeF-hU-xHU">
+                                <rect key="frame" x="149.5" y="329" width="115.5" height="31.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31.5" id="4Vt-ud-Q97"/>
+                                    <constraint firstAttribute="width" constant="115.5" id="K8i-21-PLj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="textColor" red="0.24190749766234282" green="0.37556670984455953" blue="0.2561401409837355" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <size key="shadowOffset" width="3" height="0.0"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4qt-xq-eIR">
+                                <rect key="frame" x="172.5" y="580" width="69" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="69" id="tXq-Aa-TBL"/>
+                                    <constraint firstAttribute="height" constant="33" id="tZG-FF-Djd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Continue"/>
+                                <connections>
+                                    <segue destination="zGz-IS-VU9" kind="show" id="G9u-42-ihD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="4qt-xq-eIR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3zA-ZN-5Z0"/>
+                            <constraint firstItem="7aR-pH-OxR" firstAttribute="top" secondItem="TeF-hU-xHU" secondAttribute="bottom" constant="-5" id="EHE-CP-wK9"/>
+                            <constraint firstItem="4qt-xq-eIR" firstAttribute="top" secondItem="3sP-lR-TdE" secondAttribute="bottom" constant="-46" id="Psy-ps-N3b"/>
+                            <constraint firstItem="7aR-pH-OxR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Rdm-Cj-4SY"/>
+                            <constraint firstItem="TeF-hU-xHU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Zdr-Ah-eCM"/>
+                            <constraint firstItem="3sP-lR-TdE" firstAttribute="top" secondItem="7aR-pH-OxR" secondAttribute="bottom" constant="-114.5" id="dfg-Tn-ws0"/>
+                            <constraint firstItem="7aR-pH-OxR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="jKE-YO-k2h"/>
+                            <constraint firstItem="3sP-lR-TdE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nPu-ri-qUM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="318.84057971014494" y="63.616071428571423"/>
+        </scene>
+        <!--Recommendation VC-->
+        <scene sceneID="yUv-gI-FfF">
+            <objects>
+                <viewController id="zGz-IS-VU9" userLabel="Recommendation VC" customClass="DetailViewController" customModule="PlacesToVisit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="u1a-Fn-lFm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="questionmark" translatesAutoresizingMaskIntoConstraints="NO" id="7mM-jD-zc6">
+                                <rect key="frame" x="72.5" y="358" width="269" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="g5F-W3-aMH"/>
+                                    <constraint firstAttribute="width" constant="269" id="oJk-Cg-B42"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="72P-2z-5bz">
+                                <rect key="frame" x="175.5" y="555" width="63" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Qvp-gF-pyZ"/>
+                                    <constraint firstAttribute="width" constant="63" id="lww-gX-H1Q"/>
+                                </constraints>
+                                <state key="normal" title="Find Out!"/>
+                                <connections>
+                                    <action selector="Random:" destination="zGz-IS-VU9" eventType="touchUpInside" id="Ca1-8B-MwL"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Which Place?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mKU-LB-fA1">
+                                <rect key="frame" x="147.5" y="314" width="119" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="Cgv-41-9q0"/>
+                                    <constraint firstAttribute="width" constant="119" id="pBV-xO-M3L"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="7mM-jD-zc6" firstAttribute="centerY" secondItem="u1a-Fn-lFm" secondAttribute="centerY" id="B5N-hs-4Km"/>
+                            <constraint firstItem="7mM-jD-zc6" firstAttribute="top" secondItem="mKU-LB-fA1" secondAttribute="bottom" constant="20" id="HJl-Sn-ynN"/>
+                            <constraint firstItem="7mM-jD-zc6" firstAttribute="centerX" secondItem="u1a-Fn-lFm" secondAttribute="centerX" id="Tl8-zI-RN1"/>
+                            <constraint firstItem="mKU-LB-fA1" firstAttribute="centerX" secondItem="u1a-Fn-lFm" secondAttribute="centerX" id="UtC-uI-LJy"/>
+                            <constraint firstItem="72P-2z-5bz" firstAttribute="top" secondItem="7mM-jD-zc6" secondAttribute="bottom" constant="17" id="gPR-rA-5fd"/>
+                            <constraint firstItem="72P-2z-5bz" firstAttribute="centerX" secondItem="u1a-Fn-lFm" secondAttribute="centerX" id="lFW-s6-ePc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="d71-Rq-j6f"/>
+                    </view>
+                    <connections>
+                        <outlet property="RecommendationImage" destination="7mM-jD-zc6" id="vUl-Ma-A8U"/>
+                        <outlet property="RecommendationLabel" destination="mKU-LB-fA1" id="QKE-UP-Wvi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RJD-N2-emK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1005.7971014492755" y="63.616071428571423"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="placestovisit" width="130" height="130"/>
+        <image name="questionmark" width="956" height="682"/>
+    </resources>
+</document>
